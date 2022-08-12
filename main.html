@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+       
+        <meta charset="UTF-8">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+       
+    </head>
+
+    <body>
+        <main class="principal">
+            <div class="logo">
+                <img class="logo-vector" src="imagenes/Vector.png" alt="imagen de logo">
+            </div>
+
+            
+            <div>
+                <textarea class="procesar"  id="procesar" name="procesar" placeholder="Ingrese texto aquí.."></textarea>
+            </div>
+            
+            
+            <div class="cuadro-1">
+                <img class="cuadro1-exclamacion" src="imagenes/bi_exclamation-circle-fill.png" alt="imagen de exclamacion">
+                <p class="cuadro1-texto">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="cuadro-3">
+
+                <div class="boton-encriptar" id="boton-encriptar">
+                    <p class="boton-encriptar-texto">Encriptar</p>
+                </div>
+
+                <div class="boton-desencriptar" id="boton-desencriptar">
+                    <p class="boton-desencriptar-texto">Desencriptar</p>
+                </div>
+            </div>
+
+            <div class="rectangulo">
+                <div class="cuadro-5" id="cuadro-5">
+                    <p class="cuadro5-nomensaje-texto" id="cuadro5-nomensaje-texto">Ningun mensaje fue encontrado</p>
+                    <p class="cuadro5-ingresar-texto" id="cuadro5-ingresar-texto">Ingresa el texto que desees encriptar o desencriptar</p>
+                    <div class="munieco" id="munieco">
+                        <img class="munieco-imagen" id="munieco-imagen" src="imagenes/Muñeco.png" alt="imagen de personaje">
+                    </div>
+                </div>
+                <textarea class="resultado" id="resultado" name="resultado"  readonly></textarea>
+                <div class="boton-copiar" id="boton-copiar" style="display: none"> 
+                    <p class="boton-copiar-texto">Copiar</p>
+                </div>
+            </div>     
+        </main>
+        
+        <footer class="pie">
+            <p>Página creada por Leandro Carrizo</p>
+        </footer>
+        
+        <script src="script.js"></script>
+    </body>
+</html>
